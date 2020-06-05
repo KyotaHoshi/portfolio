@@ -1,0 +1,118 @@
+@charset "UTF-8";
+// 変数 色
+$orange: #FB9600;
+$green-tea: #F2FF9F;
+$blood-orange: #F69065;
+$frame-blue: #BEE0FF;
+$frame-orange: #FB9600;
+$bg-white: #FFFAEE;
+$bg-orange: #FFDD85;
+
+$header-bg: linear-gradient(
+        120deg, 
+        $blood-orange 15%, 
+        $orange 50%, 
+        $green-tea 85%
+    )
+;
+
+$logo-frame: 
+    0 8px 5px,
+    1px 1px 0 $frame-blue,
+    1px -1px 0 $frame-blue,
+    -1px 1px 0 $frame-blue,
+    -1px -1px 0 $frame-blue
+;
+
+$orange-title-frame: 
+    0 4px 4px rgba( 00, 00, 00, 0.4),
+    1px 1px 0 $frame-orange,
+    1px -1px 0 $frame-orange,
+    -1px 1px 0 $frame-orange,
+    -1px -1px 0 $frame-orange
+;
+
+$blue-title-frame: 
+    0 4px 4px rgba( 00, 00, 00, 0.4),
+    1px 1px 0 $frame-blue,
+    1px -1px 0 $frame-blue,
+    -1px 1px 0 $frame-blue,
+    -1px -1px 0 $frame-blue
+;
+
+// 変数 値
+
+// media
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+// 全体のスタイル
+
+html {
+    font-size: 62.5%;
+    font-family: 'Rasa', serif;
+}
+
+body {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    color: rgba( 00, 00, 00, 0.5);
+    @include tab {
+        font-size: 1.5rem;
+    }
+    @include sp {
+        font-size: 1.2rem;
+    }
+}
+
+.inner {
+    padding: 150px 5% 110px;
+    @include tab {
+        padding: 80px 5% 70px;
+    }
+    @include sp {
+        padding: 60px 15% 50px;
+    }
+}
+
+.title {
+    font-size: 4.2rem;
+    text-align: center;
+    width: 100%;
+    @include tab {
+        font-size: 3.7rem;
+    }
+    @include sp {
+        font-size: 2.5rem;
+    }
+    &:after {
+        display: block;
+        content: "";
+        border-top: solid 1px;
+        margin-top: 0.5em;
+        margin-bottom: 100px;
+        @include tab {
+            margin-bottom: 70px;
+        }
+        @include sp {
+            margin-bottom: 8.2vw;
+        }
+    }
+}

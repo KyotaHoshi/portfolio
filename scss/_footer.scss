@@ -1,0 +1,28 @@
+footer {
+    background-color: #F4F4F4;
+    .inner {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        @include tab {
+            padding-top: 55px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+small {
+    color: #845207;
+    opacity: 0.5;
+    text-align: center;
+    display: block;
+    width: 100%;
+    &:before {
+        display: block;
+        content: "";
+        border-top: solid 1px;
+        margin-bottom: 70px;
+        @include tab {
+            margin-bottom: 45px;
+        }
+    }
+}

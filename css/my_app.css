@@ -1,0 +1,306 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Rasa', serif;
+}
+
+body {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 959px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+.inner {
+  padding: 150px 5% 110px;
+}
+
+@media screen and (max-width: 959px) {
+  .inner {
+    padding: 80px 5% 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    padding: 60px 15% 50px;
+  }
+}
+
+.title {
+  font-size: 4.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 959px) {
+  .title {
+    font-size: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.title:after {
+  display: block;
+  content: "";
+  border-top: solid 1px;
+  margin-top: 0.5em;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 959px) {
+  .title:after {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title:after {
+    margin-bottom: 8.2vw;
+  }
+}
+
+.header {
+  background: linear-gradient(120deg, #F69065 15%, #FB9600 50%, #F2FF9F 85%);
+  padding: 20px 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_logo {
+  font-size: 3.4rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), 1px 1px 0 #BEE0FF, 1px -1px 0 #BEE0FF, -1px 1px 0 #BEE0FF, -1px -1px 0 #BEE0FF;
+}
+
+.header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_nav_item:not(:first-child) {
+  margin-left: 3em;
+}
+
+.content {
+  background-color: #FFFAEE;
+}
+
+.content .title {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), 1px 1px 0 #FB9600, 1px -1px 0 #FB9600, -1px 1px 0 #FB9600, -1px -1px 0 #FB9600;
+}
+
+.content_text {
+  text-align: center;
+}
+
+.content_list {
+  margin-top: 40px;
+}
+
+.content_list_item {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), 1px 1px 0 #FB9600, 1px -1px 0 #FB9600, -1px 1px 0 #FB9600, -1px -1px 0 #FB9600;
+}
+
+.content_list_item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.content_list_item_title {
+  font-size: 2.4rem;
+}
+
+.content_list_item_link {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  margin-top: 15px;
+}
+
+.content_github {
+  margin-top: 40px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), 1px 1px 0 #BEE0FF, 1px -1px 0 #BEE0FF, -1px 1px 0 #BEE0FF, -1px -1px 0 #BEE0FF;
+}
+
+.content_github_title {
+  font-size: 2.4rem;
+}
+
+.content_github_link {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #F4F4F4;
+}
+
+footer .inner {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 959px) {
+  footer .inner {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+}
+
+small {
+  color: #845207;
+  opacity: 0.5;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+small:before {
+  display: block;
+  content: "";
+  border-top: solid 1px;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 959px) {
+  small:before {
+    margin-bottom: 45px;
+  }
+}
+/*# sourceMappingURL=my_app.css.map */
