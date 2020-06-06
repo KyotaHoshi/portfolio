@@ -16,12 +16,18 @@
             align-items: center;
             font-size: 5rem;
             margin-top: 60px;
+            @include sp {
+                font-size: 4rem;
+            }
         }
         &_mail {
             text-align: center;
             text-shadow: $blue-title-frame;
             margin-top: 50px;
             font-size: 3rem;
+            @include sp {
+                font-size: 2.3rem;
+            }
         }
     }
 }
