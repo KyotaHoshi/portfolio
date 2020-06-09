@@ -1,0 +1,41 @@
+.profile {
+    background-color: $bg-white;
+    .title {
+        text-shadow: $orange-title-frame;
+    }
+    &_cont {
+        display: flex;
+        justify-content: start;
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_img{ 
+            width: 24vw;
+            height: 28vw;
+            overflow: hidden;
+            @include sp {
+                margin-bottom: 8.2vw;
+                width: 30vw;
+                height: 35vw;
+            }
+            &_pic {
+                height: 100%;
+            }
+        }
+        &_status {
+            margin-left: 7vw;
+            text-align: left;
+            font-size: 3.2rem;
+            @include tab {
+                font-size: calc(1.4rem + 1vw);
+            }
+            @include sp {
+                font-size: calc(0.9rem + 1vw);
+            }
+            th {
+                width: 5em;
+            }
+        }
+    }
+}
