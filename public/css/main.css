@@ -469,9 +469,6 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .menu_cont_item:not(:first-child) {
-    margin-top: 40px;
-  }
 }
 
 .menu_cont_item_title {
@@ -550,6 +547,12 @@ header {
 
 .item3 h2 {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), 1px 1px 0 #BEE0FF, 1px -1px 0 #BEE0FF, -1px 1px 0 #BEE0FF, -1px -1px 0 #BEE0FF;
+}
+
+@media screen and (max-width: 600px) {
+  #social_link, #blog_link {
+    margin-top: 43px;
+  }
 }
 
 footer {

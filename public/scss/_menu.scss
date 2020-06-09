@@ -27,9 +27,6 @@
                 padding: 5vw 5vw 4vw 30vw;
                 align-items: flex-start;
                 justify-content: center;
-                &:not(:first-child) {
-                    margin-top: 40px;
-                }
             }
             &_title {
                 font-size: 3rem;
@@ -88,5 +85,11 @@
     background-color: #FFC1C1;
     h2 {
         text-shadow: $blue-title-frame;
+    }
+}
+
+#social_link, #blog_link {
+    @include sp {
+        margin-top: 43px;
     }
 }
